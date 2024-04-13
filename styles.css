@@ -126,19 +126,9 @@ display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 8rem;
+  
 }
 
-.header__image::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  background-color: var(--primary-color);
-  z-index: 1;
-  animation: scroll-right 0.5s 0.3s linear forwards;
-}
 @keyframes scroll-right {
   0% {
     width: 0;
@@ -159,12 +149,12 @@ display: flex;
 
 .header__content {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 10rem 5rem;
 }
 .header__content h1 {
   font-size: 4rem;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 5rem;
   color: var(--text-dark);
 }
 
@@ -219,15 +209,6 @@ display: flex;
   background-color: rgba(255, 154, 48, 0.8);
   }
   
-  .header__container {
-  display: grid;
-  grid-template-columns:
-  minmax(1rem, 1fr)
-  minmax(0, calc(var(--max-width) * 0.4))
-  minmax(0, calc(var(--max-width) * 0.6))
-  minmax(1rem, 1fr);
-  align-items: center;
-  }
 
  
   
